@@ -11,18 +11,18 @@ import {MatDividerModule} from "@angular/material/divider";
 import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
-  exports: [
-    MatIconModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatSnackBarModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatDividerModule,
-    MatCardModule,
-    MatDialogModule
-  ]
+    exports: [
+        MatIconModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatSnackBarModule,
+        MatButtonModule,
+        MatToolbarModule,
+        MatMenuModule,
+        MatDividerModule,
+        MatCardModule,
+        MatDialogModule
+    ]
 })
 
 export class MaterialModule {
