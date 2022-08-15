@@ -9,10 +9,14 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {authInterceptorProviders} from './helper/auth-interceptor.service';
 import {authErrorInterceptorProvider} from './helper/error-interceptor.service';
+import { LoginComponent } from './auth/login/login.component';
+import { RegistrationComponent } from './auth/registration/registration.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        LoginComponent,
+        RegistrationComponent
     ],
     imports: [
         BrowserModule,
