@@ -34,6 +34,7 @@ export class RegistrationComponent implements OnInit {
     }
     
     submitForm(): void {
+        console.log(this.registrationForm.value);
         this.authService.registerUser({
             email: this.registrationForm.value.email,
             username: this.registrationForm.value.username,
