@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <h2 routerLink="/main" class="mat-typography" style="cursor: pointer; margin-left: 50px;">InstaZoo</h2>
+    <span class="spacer"></span>
+    <button *ngIf="!isLoggedIn" matTooltip="Login" routerLink="/signin" mat-icon-button>
+        <mat-icon>login</mat-icon>
+    </button>
+
+    <h2 *ngIf="isDataLoaded" class="mat-typography">{{this.user.firstname}} {{this.user.lastname}}</h2>
+
+    <button *ngIf="isLoggedIn" [matMenuTriggerFor]="menu" matTooltip="Profile" mat-icon-button>
+        <mat-icon class="profile-icon" color="accent">account_circle</mat-icon>
+    </button>
+
+    <mat-menu id="menu-item" #menu="matMenu">
+        <button mat-menu-item routerLink="/profile">Profile</button>
+        <button (click)="logoutUser()" mat-menu-item>
+            Logout
+        </button>
+    </mat-menu>
+</mat-toolbar>

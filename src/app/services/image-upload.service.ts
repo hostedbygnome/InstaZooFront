@@ -8,7 +8,6 @@ const IMAGE_API = 'http://localhost:8080/api/image/';
     providedIn: 'root'
 })
 export class ImageUploadService {
-    
     constructor(private http: HttpClient) {
     }
     

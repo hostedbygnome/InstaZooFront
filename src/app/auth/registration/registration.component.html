@@ -1,6 +1,6 @@
 <div class="registration-page">
-    <h2>Sign up</h2>
-    <p>Already have an account? <a routerLink="/signin">Sign in</a></p>
+    <h2 class="mat-typography">sign up</h2>
+    <p>Already have an account? <a routerLink="/signin">sign in</a></p>
     <form [formGroup]="registrationForm">
         <div class="justify-content-center">
             <div>
@@ -41,7 +41,7 @@
             </div>
             <div>
                 <button style="width: 5rem" [disabled]="registrationForm.invalid" (click)="submitForm()" mat-flat-button
-                        color="primary">
+                        color="primary" type="submit">
                     Sign up
                 </button>
             </div>

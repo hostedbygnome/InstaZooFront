@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.css']
+    styleUrls: ['./styles/login.style.css']
 })
 export class LoginComponent implements OnInit {
     public loginForm: any;

@@ -8,7 +8,6 @@ const COMMENT_API = 'http://localhost:8080/api/comment/';
     providedIn: 'root'
 })
 export class CommentService {
-    
     constructor(private http: HttpClient) {
     }
     

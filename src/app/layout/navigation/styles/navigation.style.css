@@ -1,0 +1,16 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+#menu-item button {
+    display: block;
+    margin: 0 auto;
+}
+
+.profile-icon {
+    color: white;
+}
+
+.mat-typography {
+    font-family: 'Montserrat SemiBold', sans-serif;
+}

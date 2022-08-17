@@ -8,7 +8,6 @@ import {catchError, Observable, throwError} from 'rxjs';
     providedIn: 'root'
 })
 export class ErrorInterceptorService implements HttpInterceptor {
-    
     constructor(private tokenService: TokenStorageService,
                 private notificationService: NotificationService) {
     }

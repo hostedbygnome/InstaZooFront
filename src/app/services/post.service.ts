@@ -9,7 +9,6 @@ const POST_API = 'http://localhost:8080/api/post/';
     providedIn: 'root'
 })
 export class PostService {
-    
     constructor(private http: HttpClient) {
     }
     

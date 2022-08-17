@@ -1,5 +1,5 @@
 <div class="login-page">
-    <h2>Sign in</h2>
+    <h2 class="mat-typography">sign in</h2>
     <form [formGroup]="loginForm">
         <div class="justify-content-center">
             <div>
@@ -17,7 +17,8 @@
             </div>
 
             <div id="controls" class="row">
-                <button style="width: 5rem" [disabled]="loginForm.invalid" (click)="submitForm()" mat-flat-button color="primary">
+                <button style="width: 5rem" [disabled]="loginForm.invalid" (click)="submitForm()"
+                        mat-flat-button color="primary" type="submit">
                     Sign in
                 </button>
 

@@ -6,7 +6,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 @Component({
     selector: 'app-registration',
     templateUrl: './registration.component.html',
-    styleUrls: ['./registration.component.css']
+    styleUrls: ['./styles/registration.style.css']
 })
 export class RegistrationComponent implements OnInit {
     public registrationForm: any;
@@ -19,7 +19,7 @@ export class RegistrationComponent implements OnInit {
     }
     
     ngOnInit(): void {
-        this.registrationForm = this.createRegistrationForm();
+        this.creatNewForm();
     }
     
     createRegistrationForm(): FormGroup {
@@ -41,10 +41,15 @@ export class RegistrationComponent implements OnInit {
             firstname: this.registrationForm.value.firstname,
             lastname: this.registrationForm.value.lastname,
             password: this.registrationForm.value.password,
-            confirmPassword: this.registrationForm.value.confirmPassword
+            confirmPassword: this.registrationForm.value.confirmPassword,
         }).subscribe(data => {
             console.log(data);
             this.notificationService.showSnackBar('Successfully registered')
         });
+        this.creatNewForm();
+    }
+    
+    creatNewForm(): void {
+        this.registrationForm = this.createRegistrationForm();
     }
 }
