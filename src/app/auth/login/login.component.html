@@ -1,0 +1,30 @@
+<div class="login-page">
+    <h2 class="mat-typography">sign in</h2>
+    <form [formGroup]="loginForm">
+        <div class="justify-content-center">
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Email address</mat-label>
+                    <input matInput formControlName="username">
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" formControlName="password">
+                </mat-form-field>
+            </div>
+
+            <div id="controls" class="row">
+                <button style="width: 5rem" [disabled]="loginForm.invalid" (click)="submitForm()"
+                        mat-flat-button color="primary" type="submit">
+                    Sign in
+                </button>
+
+                <a routerLink="/signup">Sign up</a>
+            </div>
+        </div>
+
+    </form>
+</div>
